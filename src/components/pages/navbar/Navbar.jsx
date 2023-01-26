@@ -26,6 +26,7 @@ const Navbar = () => {
     <div className={styles["nav-container"]}>
       <nav className={styles["navbar"]}>
         <section className={styles["logo"]}>
+  
           <Link to="/">
           <img title="Snapdeal" class="notIeLogoHeader aspectRatioEqual sdHomepage cur-pointer" height="28" width="132" src="https://i3.sdlcdn.com/img/snapdeal/darwin/logo/sdLatestLogo.svg">
           </img>   </Link>
@@ -86,3 +87,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+       

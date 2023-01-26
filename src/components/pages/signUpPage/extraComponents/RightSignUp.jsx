@@ -15,7 +15,7 @@ const RightSignUp = () => {
   const subHandler=(e)=>
   {
     e.preventDefault();
-    localStorage.setItem("Snapdeal user",JSON.stringify(data));
+    localStorage.setItem("Snapdealuser",JSON.stringify(data));
     setData({
       id:"",
       password:""
