@@ -1,6 +1,6 @@
 .allproduct-container
 {
-    /* background-color: rgb(201, 201, 56); */
+    
     flex: 4;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
@@ -9,11 +9,9 @@
    
    padding-top: 2rem;
    min-height: 100vh;
-   /* overflow-y: auto; */
+   
    justify-content: center;
-   /* align-items: center; */
-   /* text-align: center; */
-   /* align-content: center; */
+  
    justify-items: center;
 }
 @media (max-width:1020px)
@@ -23,8 +21,6 @@
         gap: 10px;
        justify-content: center;
        align-items: center; 
-       /* justify-items: center; */
-       /* align-content: center; */
-       /* grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); */
+      
     }
 }
