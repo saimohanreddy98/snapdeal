@@ -5,7 +5,7 @@ const PriceDetails = ({cartValue}) => {
   const navigate=useNavigate();
   const clickHandler=()=>
   {
-    let temp=localStorage.getItem("Flipkartuser");
+    let temp=localStorage.getItem("Snapdealuser");
     console.log(temp)
     if(!temp)
     {

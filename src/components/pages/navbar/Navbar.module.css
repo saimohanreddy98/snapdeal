@@ -1,11 +1,9 @@
-.nav-container{
 
-}
 .navbar
 {
     width: 100%;
     height: 50px;
-    background-color: rgb(7, 57, 220);
+    background-color: rgb(220, 7, 60);
     position: fixed;
     display: flex;
     align-items: center;

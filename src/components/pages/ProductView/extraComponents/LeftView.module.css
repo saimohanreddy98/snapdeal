@@ -42,13 +42,13 @@
 {
     padding: 15px;
     flex: 1;
-    background-color: rgba(255, 68, 0, 0.826);
+    background-color: black;
 }
 .buy-now
 {
     padding: 15px;
     flex: 1;
-    background-color: orange;
+    background-color: rgb(220, 7, 60);
 }
 @media (max-width:823px)
 {

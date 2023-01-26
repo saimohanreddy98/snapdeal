@@ -44,10 +44,10 @@ const RightLogIn = () => {
       <form action="" onSubmit={subHandler}>
         <input type="text" placeholder='Enter Username' className={styles["input-field"]} required name="id" value={data.id} onChange={changeHander} />
         <input type="password" placeholder='Enter Password' className={styles["input-field"]} required  name="password" value={data.password} onChange={changeHander}/>
-        <span className={styles["terms-condition"]}>By continuing, you agree to Flipkart's Terms of Use and Privacy Policy.</span>
+        <span className={styles["terms-condition"]}>By continuing, you agree to snapdeal's Terms of Use and Privacy Policy.</span>
          <button type='submit' className={styles["login-btn"]} >Log In</button>
       </form>
-      <Link to="/signup">New to Flipkart? Create an account</Link>
+      <Link to="/signup">New to Snapdeal? Create an account</Link>
     </section>
   )
 }

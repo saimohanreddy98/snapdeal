@@ -26,7 +26,9 @@ const Navbar = () => {
     <div className={styles["nav-container"]}>
       <nav className={styles["navbar"]}>
         <section className={styles["logo"]}>
-          <Link to="/">Snapdeal</Link>
+          <Link to="/">
+          <img title="Snapdeal" class="notIeLogoHeader aspectRatioEqual sdHomepage cur-pointer" height="28" width="132" src="https://i3.sdlcdn.com/img/snapdeal/darwin/logo/sdLatestLogo.svg">
+          </img>   </Link>
         </section>
         <section className={styles["search"]}>
           <div className={styles["search-container"]}>
