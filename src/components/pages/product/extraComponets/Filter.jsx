@@ -34,7 +34,7 @@ const changeHandler=(e)=>
               <option value="low to high">Low to High</option>
             </select>
           </div>
-          <div className={styles["row"]}>
+         {/* <div className={styles["row"]}>
             <label className={styles["first-child"]} htmlFor="">
               Color
             </label>
@@ -51,7 +51,7 @@ const changeHandler=(e)=>
                 );
               })}
             </select>
-          </div>
+            </div>*/}
           <div className={styles["row"]}>
             <button type="reset" className={styles["clear"]} htmlFor="" onClick={()=>resetFilter(old=>!old)}>
               Clear Filter

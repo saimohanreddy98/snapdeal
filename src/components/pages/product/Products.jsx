@@ -50,12 +50,12 @@ const Products = () => {
       setMyData(allData);
       
     }
-    else if(formData.category=="clothing")
+    else if(formData.category=="cloths")
     {
       // console.log("hello");
       setMyData(()=>
       {
-        let temp=allData.filter((e)=>e.category.includes("cloth"));
+        let temp=allData.filter((e)=>e.category.includes("cloths"));
         return temp
       });
       

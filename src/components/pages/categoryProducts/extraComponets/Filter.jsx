@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Filter.module.css";
 import { colors } from "./color";
-const Filter = ({color,price,category,changeFunction,setFilter,resetFilter}) => {
+const Filter = ({color,price,discount,changeFunction,setFilter,resetFilter}) => {
   
 const changeHandler=(e)=>
 {
@@ -12,18 +12,18 @@ const changeHandler=(e)=>
     <section className={styles["filter-container"]}>
       
         <form className={styles["box"]} method="Post" onSubmit={(e)=>{e.preventDefault();setFilter(old=>!old)}}>
-          <div className={styles["row"]}>
+          {/*<div className={styles["row"]}>
             <label className={styles["first-child"]} htmlFor="">
-              category
+              discount
             </label>
-            <select className={styles["last-child"]} name="category" defaultValue={category} onChange={changeHandler} id="disabled" >
-              {/* <option value="all">All</option>
-              <option value="clothing">Clothing</option>
-              <option value="electronics">Electronics</option>
-              <option value="jewelery">Jewelery</option> */}
+            <select className={styles["last-child"]} name="discount" defaultValue={discount} onChange={changeHandler} id="disabled" >
+               <option value="all">All</option>
+              <option value="10-20">10-20</option>
+              <option value="20-30">20-30</option>
+  <option value="30-40">30-40</option>
               
             </select>
-          </div>
+  </div>*/}
           <div className={styles["row"]}>
             <label className={styles["first-child"]} htmlFor="">
               Price
@@ -34,7 +34,7 @@ const changeHandler=(e)=>
               <option value="low to high">Low to High</option>
             </select>
           </div>
-          <div className={styles["row"]}>
+          {/*<div className={styles["row"]}>
             <label className={styles["first-child"]} htmlFor="">
               Color
             </label>
@@ -51,7 +51,7 @@ const changeHandler=(e)=>
                 );
               })}
             </select>
-          </div>
+          </div>*/}
           <div className={styles["row"]}>
             <button type="reset" className={styles["clear"]} htmlFor="" onClick={()=>resetFilter(old=>!old)}>
               Clear Filter

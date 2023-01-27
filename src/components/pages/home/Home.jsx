@@ -6,11 +6,11 @@ const Home = () => {
   return (
     <section className={styles["home"]}>
        <CatelogCard text="electronics" category="electronics" path="electronics"/>
-      <CatelogCard text="cloths" category="cloth" path="cloth"/>
+      <CatelogCard text="cloth" category="cloth" path="cloth"/>
       <CatelogCard text="jewelery" category="jewelery" path="jewelery"/>
       
     </section>
   )
-}
+  }
 
 export default Home

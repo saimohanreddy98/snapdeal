@@ -7,7 +7,7 @@ const ProductCard = ({img,title,id,price}) => {
       <img src={img} alt="product image"  className={styles["product-img"]}/>
       <h3 className={styles["price"]}>Rs: {price}</h3>
       <p className={styles["title"]}>{title.slice(0,25)}</p>
-      <span className={styles["offer"]}>offer {Math.ceil(Math.random() * 100)} % Off</span>
+      <span className={styles["offer"]}>offer {Math.ceil(Math.random() * 50)} % Off</span>
       <button className={styles["add-to-cart-btn"]} id={id}>BUY NOW</button>
     </Link>
   )

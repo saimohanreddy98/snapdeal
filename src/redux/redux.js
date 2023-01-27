@@ -8,7 +8,7 @@ const initialState={
  {
    for(let i=0;i<array.length;i++)
    {
-    if(array[i].id==object.id)
+    if(array[i].id===object.id)
     {
         return i;
     }
@@ -33,7 +33,7 @@ export const reducer=(state=initialState,action)=>
         case "ADD_TO_CART":
              let {cart}=state;
              let ind=search(cart,action.payload)
-             if(ind==-1)
+             if(ind===-1)
              {
                  cart.push(action.payload);
              }
