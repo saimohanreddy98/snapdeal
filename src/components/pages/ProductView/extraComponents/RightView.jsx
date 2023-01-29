@@ -9,7 +9,7 @@ const RightView = ({data}) => {
     }
   return (
     <section className={styles["right-container"]}>
-      <section className={styles["brand-name"]}>Flipkar SmartBuy</section>
+      
       <h3 className={styles["title"]}>{data?.title}</h3>
       <section className={styles["special-offer"]}>Special offer</section>
       <section className={styles["price-holder"]}>
