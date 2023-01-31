@@ -22,8 +22,18 @@
 }
 img
 {
-    width: 150px;
+    width: -webkit-fill-available;
     background-color: transparent;
+}
+    .image-container{
+        position: relative;
+        }
+        img{
+            display: flex;
+        
+        }
+        .image-item{
+            min-width: none;;
 }
 @media (max-width:609px)
 {

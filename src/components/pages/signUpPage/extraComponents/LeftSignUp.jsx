@@ -2,6 +2,7 @@ import React from 'react'
 import styles from "./LeftSignUp.module.css"
 const LeftSignUp = () => {
   return (
+    
     <section className={styles["left-side"]}>
       <h2 className={styles["login-text"]}>Sign Up</h2>
       <div className={styles["text"]}>
@@ -11,6 +12,7 @@ const LeftSignUp = () => {
         <img src="" alt="" />
       </div> */}
     </section>
+    
   )
 }
 

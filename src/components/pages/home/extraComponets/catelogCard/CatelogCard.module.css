@@ -87,3 +87,20 @@ hr
         justify-content: start;
     }
 }
+.image-container{
+position: relative;
+}
+.image-list{
+    display: flex;
+
+}
+.image-item{
+    min-width: none;;
+
+}
+.image-item img{
+    width:fit-content;
+    height: 50%;
+    
+    
+}

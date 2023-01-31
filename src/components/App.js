@@ -49,7 +49,7 @@ useEffect(()=>
   {
     let data=await fetch("https://content.newtonschool.co/v1/pr/63b6c911af4f30335b4b3b89/products")
     let ans=await data.json();
-    // console.log(ans)
+   console.log(ans,"......")
     Dispatch({type:"LOAD_FIRST",payload:[...ans,...ans,...ans]})
     
   })();

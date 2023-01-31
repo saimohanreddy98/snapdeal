@@ -8,3 +8,20 @@
     grid-template-rows: repeat(3,minmax(250px,auto));
     gap: 10px;
 }
+.image-container{
+    position: relative;
+    }
+    .image-list{
+        display: flex;
+    
+    }
+    .image-item{
+        min-width: none;;
+    
+    }
+    .image-item img{
+        width:max-content;
+        height: 50%;
+        
+        
+    }

@@ -7,6 +7,13 @@ const CatelogCard = ({text,category,path}) => {
   const list=useSelector((state)=>state.allData)
   return (
     <>
+               
+
+
+                
+
+          
+    
       <section className={styles["sec1"]}>
         <header className={styles["header"]}>
             <section className={styles["header-left"]}><h2>Top deals on {text}</h2>
