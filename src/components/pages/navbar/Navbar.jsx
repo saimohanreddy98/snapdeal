@@ -6,20 +6,30 @@ const Navbar = () => {
   const navigate=useNavigate();
   const [val,setVal]=useState("");
   // const [name,setName]=useState(null);
-  const {cart}=useSelector(state=>state);
+  const cart=useSelector(state=>state.allData);
+  console.log(cart)
   let name=localStorage.getItem("Snapdealuser");
   const push=()=>
   {
-    if(val.trim()==="")
-    {
+    // if(val.trim()==="")
+    // {
 
-    }
-    else
-    {
-      navigate(`/CatProducts/${val}`);
-    }
+    // }
+    // else
+    // {
+    //   navigate(`/CatProducts/${val}`);
+    // }
+    const filterData=cart.filter((item)=>{
+      const itemName=item.title.toLowerCase();
+      const value=val.toLowerCase();
+      if(itemName.match(value))
+      {
+        return true;
+      }
     
-    
+    })
+    console.log(filterData,"...")
+    navigate(`/CatProducts/${filterData[0].id}`);
   }
 
   return (
@@ -38,7 +48,7 @@ const Navbar = () => {
               placeholder="Search here..."
               className={styles["input"]}
               value={val}
-              onChange={(e)=>setVal(e.target.value)}
+              onChange={(e)=>{setVal(e.target.value);push()}}
             />
             <a className={styles["search-btn"]} onClick={push}>
               <i class="fa-sharp fa-solid fa-magnifying-glass"></i>

@@ -13,11 +13,12 @@ const CatProducts = () => {
   
   const params=useParams();
   
-  
   const [myData,setMyData]=useState([]);
   // console.log(myData)
   const [applyFilter,setApplyFilter]=useState(false);
   const [resetFilter,setResetFilter]=useState(false);
+  console.log(myData,"111")
+
   function chnageFunction(name,value)
   {
     setFormData({...formData,[name]:value})
@@ -36,7 +37,7 @@ const CatProducts = () => {
   useEffect(()=>
   {
     
-    setMyData(()=>allData.filter((e)=>e.category.includes(params.type)));
+    setMyData(()=>allData.filter((item)=>item.id==params.type));
     
   },[params])
   
