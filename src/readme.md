@@ -45,3 +45,20 @@ const SearchButton = () => {
 export default SearchButton;
 https://fakestoreapi.com/products
 https://content.newtonschool.co/v1/pr/63b6c911af4f30335b4b3b89/products
+import React from "react";
+async function code(){
+    let data =await fetch("https://content.newtonschool.co/v1/pr/63b6c911af4f30335b4b3b89/products");
+    let ans=await data.json();
+    let x=ans.filter((item) => {
+        const da=item.title.toLowerCase();
+        console.log(da);
+        if(da.match("item")){
+            return true;
+        }
+    });
+    console.log(x,".... ..");
+}
+code();
+[].map((item) =>{
+    console.log(item);
+})
