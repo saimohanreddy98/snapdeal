@@ -48,5 +48,5 @@ form{
   text-align: center;  
 }
 img{
-    width:fit-content;
+    width: -webkit-fill-available;
 }
