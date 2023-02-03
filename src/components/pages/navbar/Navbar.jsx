@@ -89,7 +89,7 @@ const Navbar = () => {
           <Link to="/cart">
             <i class="fa-sharp fa-solid fa-cart-shopping"></i>
           </Link>
-          <span className={styles["cart-count"]}>{cart.length}</span>
+          <span className={styles["cart-count"]}>{}</span>
         </section>
       </nav>
     </div>
