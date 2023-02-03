@@ -47,3 +47,6 @@ form{
   color: rgb(13, 117, 244);
   text-align: center;  
 }
+img{
+    width:fit-content;
+}
